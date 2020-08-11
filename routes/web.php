@@ -13,10 +13,5 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/','homepageController@index')->name('homepage');
 
-Route::get("/urun/{urunadi}",function ($urunadi){
-   return "urun adi: $urunadi";
-});
